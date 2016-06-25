@@ -3,6 +3,7 @@
 Test array flattener aimed to:
 
 - minimize extra memory usage
+- support huge nesting level
 - support any object as array's content
 
 #Using with IRB
@@ -11,7 +12,7 @@ Test array flattener aimed to:
 > cd <project_folder>
 > irb -Ilib
 irb> require 'flattener'
-irb> Flattener.perform([1, 2, [3, 4])
+irb> Flattener.perform([1, 2, [3, 4]])
 [1, 2, 3, 4]
 ```
 #Running tests
